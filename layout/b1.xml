@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:map="http://schemas.android.com/apk/res-auto">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/map2"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        map:cameraTargetLat="48.666"
+        map:cameraTargetLng="6.147"
+        map:cameraZoom="14.5"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/textView"
+        map:uiRotateGestures="true"
+        map:uiScrollGestures="true"
+        map:uiZoomControls="true"
+        map:uiZoomGestures="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/blanc"
+        android:text="@string/tvmap2"
+        android:textAlignment="center"
+        android:textColor="#278c28"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/map2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.281"
+        tools:ignore="RelativeOverlap" />
+
+    <ImageButton
+        android:id="@+id/im"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true" android:layout_below="@+id/textView"
+        app:srcCompat="@android:drawable/ic_dialog_info"
+        android:background="#80000000"
+        android:layout_alignParentRight="true" />
+
+
+    <Button
+        android:id="@+id/buttoncode2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:background="@drawable/mybutton"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:text="@string/flash"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:paddingStart="2dp" />
+
+
+
+
+</RelativeLayout>
